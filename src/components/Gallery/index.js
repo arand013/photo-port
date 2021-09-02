@@ -13,8 +13,10 @@ function Gallery (props) {
         <section>
             <h1>{capitalizeFirstLetter(currencyCategory.name)}</h1>
             <p>{currencyCategory.name}</p>
-            <div>
+            <div className="flex-row">
                 <img src={photo}
+                alt="Commercial Example"
+                className="img-thumbnail mx-1"
                 />
             </div>
         </section>
