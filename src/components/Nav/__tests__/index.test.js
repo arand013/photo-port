@@ -6,10 +6,15 @@ import Nav from '..';
 afterEach(cleanup);
 
 describe('Nav component', () => {
- // baseline test
- it('renders', () => {
-    render(<Nav />);
-  });
-
-  //snapshot test
-})
+    // baseline test
+    it('renders', () => {
+      render(<Nav />);
+    });
+  
+    // snapshot test
+    it('matches snapshot', () => {
+      const { asFragment } = render(<Nav />);
+      // assert value comparison
+    });
+  })
+  
