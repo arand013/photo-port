@@ -11,5 +11,23 @@ const currentPhoto = {
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
   index: 1
 };
-
 afterEach(cleanup);
+
+describe('Modal component', () => {
+    it('renders', () => {
+      render(<Modal
+        onClose={mockToggleModal}
+        currentPhoto={currentPhoto}
+      />);
+    })
+  
+    it('matches snapshot DOM node structure', () => {
+      const { asFragment } = render(<Modal
+        onClose={mockToggleModal}
+        currentPhoto={currentPhoto}
+      />);
+  
+      expect(asFragment()).toMatchSnapshot();
+    });
+  })
+  
