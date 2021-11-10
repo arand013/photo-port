@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="module" src="/index.js"></script>
+  <style>
+  body { font-family: sans-serif; }
+  #profile {
+    width: 200px;
+    height: 80px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    box-shadow:  6px 6px 2px 1px teal;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 20px;
+    font-family: monospace;
+  }
+  #profile img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+  }
+  a#profile {
+    text-decoration: none;
+  }
+  #profile:visited {
+    color: black;
+  }
+
+  #sign-out-btn {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    width: 150px;
+    height: 50px;
+    right: 0;
+    top: 110px;
+    text-decoration: none;
+  }
+  #sign-out-btn img {
+    width: 30px;
+    height: 30px;
+  }
+  #sign-out-text {
+    padding: -10px 0 0 0;
+  }
+  </style>
+</head>
+<body>
+  <h1>Account Explorer</h1>
+  <p>
+    login with web3 wallet
+  </p>
+  <img
+  id="sign-in-btn"
+  src="./sign-in-btn.jpeg" width="200"
+  style="cursor: pointer"
+  />
+  <div id="account-info"></div>
+  <br />
+  <div>
+    <button id="verify-btn" style="display: none">Verify Account</button>
+    <div id="verify-msg" style="display: none"></div>
+  </div>
+  <br />
+  <a href="https://github.com/morenoh149/sign-in-with-ethereum">
+    View Page Source on Github
+  </a>
+  <a href="" id="profile">
+    <img src="profile.png" />
+    <div id="name">Not Signed In</div>
+  </a>
+  <a href="" id="sign-out-btn">
+    <img src="sign-out-btn.gif" />
+    <span id="sign-out-span">Sign Out</span>
+  </a>
+</body>
+</html>
