@@ -1,5 +1,5 @@
   
-import { ethers } from "./ethers-5.1.esm.min.js";
+import { ethers } from "./ether";
 
 let userAddress;
 let balance;
